@@ -1,5 +1,135 @@
 .ninos {
-    /* Estilos para resaltar la sección de Hombres */
+
     font-weight: bold;
-    color: #ff0000; /* Color rojo, puedes ajustarlo según tus preferencias */
+    color: #ff0000; /
   }
+
+  
+  body {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .mainContainer{
+    width: 100%;
+  }
+  
+ 
+  h1 {
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    text-align: center;
+    background-color: lightblue;
+    border: solid 8px black;
+    color: #0c0000; /* Color de texto gris oscuro */
+    animation: fadeIn 2s ease-in-out, scaleUp 3s infinite alternate;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes scaleUp {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+  
+  
+  .cardContenedorHombres {
+  
+    display: flex;
+    border-radius:10px;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  .cardStyle {
+    width: 250px;
+    height: 350px;
+     /* Ancho de cada tarjeta */
+  }
+  
+  .footer {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 31%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .social-links li {
+    list-style: none;
+  }
+  
+  .social-links img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .footer h2 {
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .footer p {
+    animation: fadeInUp 1s ease-out 0.5s;
+  }
+  
+  .footer ul li {
+    animation: fadeInUp 1s ease-out 0.8s;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
