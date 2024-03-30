@@ -16,22 +16,15 @@ body {
 }
 
 h1 {
-  font-style: italic;
-  font-size: 25px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 31%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  font-size: 30px;
+  text-align: center;
   color: #fff;
-  padding: 15px;
-  margin-top: 10px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  animation: fadeIn 1s ease-out, colorChange 5s infinite alternate;
 }
 
 .cardContenedorHombres {
@@ -105,13 +98,20 @@ h1 {
   animation: fadeInUp 1s ease-out 0.8s;
 }
 
-@keyframes fadeInUp {
-  0% {
+@keyframes animate__backInLeft {
+  from {
     opacity: 0;
-    transform: translateY(20px);
   }
-  100% {
+  to {
     opacity: 1;
-    transform: translateY(0);
+  }
+}
+
+@keyframes colorChange {
+  from {
+    background-color: #f0f0f0;
+  }
+  to {
+    background-color: #c0c0c0;
   }
 }

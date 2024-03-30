@@ -11,37 +11,33 @@ body {
   margin-top: 2rem;
 }
 
-.mainContainer {
-  width: 100%;
-}
-
 h1 {
-  font-family: Arial, sans-serif;
-  font-size: 36px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
   text-align: center;
-  background-color: lightblue;
-  border: solid 8px black;
-  color: #0c0000;
-  animation: fadeIn 2s ease-in-out, scaleUp 3s infinite alternate;
+  color: #fff;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  animation: fadeIn 1s ease-out, colorChange 5s infinite alternate;
 }
 
-@keyframes fadeIn {
+@keyframes animate__backInLeft {
   from {
     opacity: 0;
-    transform: translateY(-20px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
-@keyframes scaleUp {
+@keyframes colorChange {
   from {
-    transform: scale(1);
+    background-color: #f0f0f0;
   }
   to {
-    transform: scale(1.1);
+    background-color: #c0c0c0;
   }
 }
 
