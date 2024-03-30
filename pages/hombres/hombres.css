@@ -1,16 +1,17 @@
-.hombres {
-  /* Estilos para resaltar la sección de Hombres */
-  font-weight: bold;
-  color: #ff0000; /* Color rojo, puedes ajustarlo según tus preferencias */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   width: 98%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2rem;
 }
 
-.mainContainer{
+.mainContainer {
   width: 100%;
 }
 
@@ -34,9 +35,8 @@ h1 {
 }
 
 .cardContenedorHombres {
-
   display: flex;
-  border-radius:10px;
+  border-radius: 10px;
   gap: 20px;
   justify-content: space-around;
   align-items: center;
@@ -44,14 +44,13 @@ h1 {
   padding: 20px;
   flex-wrap: wrap;
   width: 100%;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cardStyle {
   width: 250px;
   height: 350px;
-   /* Ancho de cada tarjeta */
 }
 
 .footer {
@@ -116,4 +115,3 @@ h1 {
     transform: translateY(0);
   }
 }
-
