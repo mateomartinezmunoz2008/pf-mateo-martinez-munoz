@@ -1,46 +1,56 @@
+@charset "UTF-8";
+/* Reset de estilos */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* Estilos generales del cuerpo */
 body {
   width: 98%;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Estilos para el título principal */
 h1 {
   font-size: 30px;
-  font-family: "Times New Roman", Times, serif;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
+  color: #fff;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
+/* Estilos para el fondo del título principal */
 .mainTitle {
   background: rgb(2, 0, 36);
   background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 31%, rgb(0, 212, 255) 100%);
+  font-family: "Courier New", Courier, monospace;
 }
 
-.cardContenedor {
+/* Estilos para el navbar */
+.navbar {
   margin-top: 2rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
-.card {
-  width: 200px;
+/* Estilos para el contenido del navbar */
+.container-fluid {
+  width: 200px; /* Este ancho puede ajustarse según tus necesidades */
   padding: 20px;
   background-color: #f4f4f4;
   border-radius: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
 }
 
+/* Estilos para el footer */
 .footer {
   background: rgb(2, 0, 36);
   background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 31%, rgb(0, 212, 255) 100%);
@@ -48,6 +58,7 @@ h1 {
   padding: 20px;
 }
 
+/* Estilos para el contenido del footer */
 .footer-content {
   display: flex;
   flex-direction: column;
@@ -55,11 +66,13 @@ h1 {
   text-align: center;
 }
 
+/* Estilos para los enlaces del footer */
 .footer a {
   color: #fff;
   text-decoration: none;
 }
 
+/* Estilos para los íconos de redes sociales */
 .social-links {
   display: flex;
   gap: 10px;
@@ -76,16 +89,11 @@ h1 {
   border-radius: 50%;
 }
 
-.footer h2 {
-  animation: fadeInUp 1s ease-out;
-}
-
-.footer p {
-  animation: fadeInUp 1s ease-out 0.5s;
-}
-
+/* Animaciones */
+.footer h2,
+.footer p,
 .footer ul li {
-  animation: fadeInUp 1s ease-out 0.8s;
+  animation: fadeInUp 1s ease-out;
 }
 
 @keyframes fadeInUp {

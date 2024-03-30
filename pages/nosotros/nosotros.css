@@ -1,5 +1,131 @@
 .nosotros {
-    /* Estilos para resaltar la sección de Hombres */
-    font-weight: bold;
-    color: #ff0000; /* Color rojo, puedes ajustarlo según tus preferencias */
-  }
+   /* Estilos para resaltar la sección de Nosotros */
+   font-weight: bold;
+   color: #ff0000; /* Color rojo, puedes ajustarlo según tus preferencias */
+ }
+ 
+
+ body { 
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+ }
+ 
+ h1 {
+   font-size: x-large;
+   display: flex;
+   justify-content: center;
+   font-family: 'Courier New', Courier, monospace;
+   text-align: center;
+ }
+ 
+ .galeria {
+   width: 100%; 
+   display: flex;
+   justify-content: center; 
+   align-items: center; 
+   padding: 10px;
+   margin-top: 20px; 
+ }
+ 
+ .item {
+   border: 5px solid black;
+   background-size: cover;
+   background-position: center;
+   height: 300px; 
+   width: 300px; 
+   margin: 10px; 
+ }
+
+ .contenedorImagenes{
+  display:flex;
+  width: 80%;
+  margin-left:auto;
+  margin-right:auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+ }
+ 
+ .item img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+ 
+ .text-center {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   padding: 20px;
+   margin: 15px;
+   margin-top: 15px;
+   margin-bottom: 15px;
+ }
+ .footer {
+   background: rgb(2, 0, 36);
+   background: linear-gradient(
+     90deg,
+     rgba(2, 0, 36, 1) 0%,
+     rgba(9, 9, 121, 1) 31%,
+     rgba(0, 212, 255, 1) 100%
+   );
+   color: #fff;
+   padding: 20px;
+ }
+ 
+ .footer-content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+ }
+ 
+ .footer a {
+   color: #fff;
+   text-decoration: none;
+ }
+ 
+ .social-links {
+   display: flex;
+   gap: 10px;
+   margin-top: 20px;
+ }
+ 
+ .social-links li {
+   list-style: none;
+ }
+ 
+ .social-links img {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+ }
+ 
+ .footer h2 {
+   animation: fadeInUp 1s ease-out;
+ }
+ 
+ .footer p {
+   animation: fadeInUp 1s ease-out 0.5s;
+ }
+ 
+ .footer ul li {
+   animation: fadeInUp 1s ease-out 0.8s;
+ }
+
+
+ 
+ @keyframes fadeInUp {
+   0% {
+     opacity: 0;
+     transform: translateY(20px);
+   }
+   100% {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }
+
+ 
+ 
